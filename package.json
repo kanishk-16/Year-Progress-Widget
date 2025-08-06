@@ -1,0 +1,30 @@
+{
+  "name": "year-progress-widget",
+  "version": "1.0.0",
+  "description": "A beautiful Electron.js desktop tray widget showing year progress.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Kayvee",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^30.0.0"
+  },
+  "build": {
+    "files":[
+        "assets/**",
+        "main.js",
+        "index.html",
+        "renderer.js",
+        "style.css"
+    ],
+    "appId": "com.yourname.yearprogress",
+    "productName": "Year Progress Widget",
+    "icon": "assets/icon.ico",
+    "win": {
+        "target": "nsis",
+        "icon": "assets/icon.ico"
+    }
+  }
+}
